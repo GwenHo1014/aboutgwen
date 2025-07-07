@@ -590,7 +590,7 @@
  }
 
  /* Media Queries for desktops and up */
- @media (min-width: 900px) {
+ @media (max-width: 900px) {
      .container {
          max-width: 900px;
      }
