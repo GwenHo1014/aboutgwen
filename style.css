@@ -447,302 +447,55 @@
     width: 50%;
  }
 
- @media (max-width: 480px) {
-     body {
-         font-size: 16px;
-         overflow-x: hidden;
-         overflow-y: auto;
-     }
-
-     .container {
-         max-width: 600px;
-         margin: 0 auto;
-     }
-
-     .cardgroup {
-         flex-direction: column;
-         flex-wrap: wrap;
-         gap: 24px;
-         margin-left: -20px;
-        justify-content: center;
-     }
-
-     .card {
-         flex: 1 1 45%;
-         max-width: 45%;
-     }
-
-     nav ul {
-         flex-direction: row;
-         gap: 24px;
-         justify-content: flex-end;
-     }
-
-     .inline {
-         display: flex;
-         flex-direction: column;
-         flex-wrap: wrap;
-         gap: 12px;
-         /* optional: space between items */
-     }
-
-     .gwen div {
-         width: 100%;
-     }
-
-     .inline>* {
-         flex: 0 1 auto;
-     }
-
-     .gwen>.g>.top,
-     .gwen>.w>.down,
-     .gwen>.e>.top,
-     .gwen>.n>.down {
-         background-color: #f0f0f0;
-         padding: 0;
-         width: 100%;
-
-     }
-
-     .gwen>.g>.down,
-     .gwen>.w>.top,
-     .gwen>.e>.down,
-     .gwen>.n>.top {
-         display: none;
-     }
-
-     #hellotomyworld{
-        padding: 0;
-        margin-top: 30px;
-     }
-
-     #hellotomyworld .left {
-         margin-left: auto;
-         margin-right: auto;
-         text-align: center;
-     }
-
-     #hellotomyworld .right {
-
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-
-     #hellotomyworld .right img {
-         width: 50%;
-         margin-left: auto;
-         margin-right: auto;
-         margin-top: 0px;
-         display: block;
-         height: auto;
-     }
-
-     #gwen {
-         padding: 0;
-     }
-
-
-
-     #about {
-         margin-top: 450px;
-         padding: 0 20px;
-     }
-
-     #about img {
-         display: none;
-     }
-
-     #about .right {
-         margin-left: auto;
-         margin-right: auto;
-         width: auto;
-     }
-
-     #projects {
-         padding: 20px;
-         margin-top: 20px;
-     }
-
-     .card {
-         min-width: 250px;
-     }
-
-     .contact-form {
-         padding: 0;
-     }
-
-     #contact .right {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-
-     .right img {
-         width: 80%;
-         height: auto;
-         margin-left: auto;
-         margin-right: auto;
-         padding: 0;
-         float: none;
-         display: block;
-     }
-
-      #contact .left{
-    width: 90%;
- }
- }
-
- @media (min-width: 490px) {
-     body {
-         font-size: 16px;
-         overflow-x: hidden;
-         overflow-y: auto;
-     }
-
-     .container {
-         max-width: 600px;
-         margin: 0 auto;
-     }
-
-     .cardgroup {
-         flex-direction: column;
-         flex-wrap: wrap;
-         gap: 24px;
-         margin-left: 20px;
-        justify-content: center;
-     }
-
-     .card {
-         flex: 1 1 45%;
-         max-width: 45%;
-     }
-
-     nav ul {
-         flex-direction: row;
-         gap: 24px;
-         justify-content: flex-end;
-     }
-
-     .inline {
-         display: flex;
-         flex-direction: column;
-         flex-wrap: wrap;
-         gap: 12px;
-         /* optional: space between items */
-     }
-
-     .gwen div {
-         width: 100%;
-     }
-
-     .inline>* {
-         flex: 0 1 auto;
-     }
-
-     .gwen>.g>.top,
-     .gwen>.w>.down,
-     .gwen>.e>.top,
-     .gwen>.n>.down {
-         background-color: #f0f0f0;
-         padding: 0;
-         width: 100%;
-
-     }
-
-     .gwen>.g>.down,
-     .gwen>.w>.top,
-     .gwen>.e>.down,
-     .gwen>.n>.top {
-         display: none;
-     }
-
-
-
-     #hellotomyworld .left {
-         margin-left: auto;
-         margin-right: auto;
-         text-align: center;
-     }
-
-     #hellotomyworld .right {
-
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-
-     #hellotomyworld .right img {
-         width: 50%;
-         margin-left: auto;
-         margin-right: auto;
-         margin-top: -30px;
-         display: block;
-         height: auto;
-     }
-
-     #gwen {
-         padding: 0;
-     }
-
-
-
-     #about {
-         margin-top: 450px;
-     }
-
-     #about img {
-         display: none;
-     }
-
-     #about .right {
-         margin-left: auto;
-         margin-right: auto;
-         width: auto;
-     }
-
-     #projects {
-         padding: 20px;
-         margin-top: 20px;
-     }
-
-     .card {
-         min-width: 300px;
-     }
-
-     .contact-form {
-         padding: 0;
-     }
-
-     #contact .right {
-         display: flex;
-         justify-content: center;
-         align-items: center;
-     }
-
-     .right img {
-         width: 70%;
-         height: auto;
-         margin-left: auto;
-         margin-right: auto;
-         padding: 0;
-         float: none;
-         display: block;
-     }
-
-      #contact .left{
-    width: 70%;
- }
- }
 
  /* Media Queries for desktops and up */
- @media (max-width: 900px) {
-     .container {
-         max-width: 900px;
-     }
+ @media (min-width: 1024px) {
+ #gwen {
+     padding: 0px 20px;
+     margin: 0;
+     margin-top: -15px;
+     height: 500px;
+     margin-bottom: 20px;
 
-     .card {
-         flex: 1 1 30%;
-         max-width: 30%;
-     }
  }
+
+ .gwen div {
+     height: 200px;
+     padding: 5px;
+     text-align: center;
+     font-size: 1.25rem;
+
+ }
+
+ .gwen .top {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .gwen .down {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ .gwen>.g>.top,
+ .gwen>.g>.down,
+ .gwen>.e>.top,
+ .gwen>.e>.down {
+     background-color: #f0f0f0;
+     padding: 20px 20px;
+
+ }
+
+ .gwen>.w>.top,
+ .gwen>.w>.down,
+ .gwen>.n>.top,
+ .gwen>.n>.down {
+     background-color: #e0e0e0;
+     padding: 20px 20px;
+
+ }
+ }
+
+ 
