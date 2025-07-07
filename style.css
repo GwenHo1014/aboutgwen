@@ -447,7 +447,153 @@
     width: 50%;
  }
 
- @media (max-width: 600px) {
+ @media (max-width: 480px) {
+     body {
+         font-size: 16px;
+         overflow-x: hidden;
+         overflow-y: auto;
+     }
+
+     .container {
+         max-width: 600px;
+         margin: 0 auto;
+     }
+
+     .cardgroup {
+         flex-direction: column;
+         flex-wrap: wrap;
+         gap: 24px;
+         margin-left: -20px;
+        justify-content: center;
+     }
+
+     .card {
+         flex: 1 1 45%;
+         max-width: 45%;
+     }
+
+     nav ul {
+         flex-direction: row;
+         gap: 24px;
+         justify-content: flex-end;
+     }
+
+     .inline {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         gap: 12px;
+         /* optional: space between items */
+     }
+
+     .gwen div {
+         width: 100%;
+     }
+
+     .inline>* {
+         flex: 0 1 auto;
+     }
+
+     .gwen>.g>.top,
+     .gwen>.w>.down,
+     .gwen>.e>.top,
+     .gwen>.n>.down {
+         background-color: #f0f0f0;
+         padding: 0;
+         width: 100%;
+
+     }
+
+     .gwen>.g>.down,
+     .gwen>.w>.top,
+     .gwen>.e>.down,
+     .gwen>.n>.top {
+         display: none;
+     }
+
+     #hellotomyworld{
+        padding: 0;
+        margin-top: 30px;
+     }
+
+     #hellotomyworld .left {
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+     }
+
+     #hellotomyworld .right {
+
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     #hellotomyworld .right img {
+         width: 50%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 0px;
+         display: block;
+         height: auto;
+     }
+
+     #gwen {
+         padding: 0;
+     }
+
+
+
+     #about {
+         margin-top: 450px;
+         padding: 0 20px;
+     }
+
+     #about img {
+         display: none;
+     }
+
+     #about .right {
+         margin-left: auto;
+         margin-right: auto;
+         width: auto;
+     }
+
+     #projects {
+         padding: 20px;
+         margin-top: 20px;
+     }
+
+     .card {
+         min-width: 250px;
+     }
+
+     .contact-form {
+         padding: 0;
+     }
+
+     #contact .right {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .right img {
+         width: 80%;
+         height: auto;
+         margin-left: auto;
+         margin-right: auto;
+         padding: 0;
+         float: none;
+         display: block;
+     }
+
+      #contact .left{
+    width: 90%;
+ }
+ }
+
+ @media (min-width: 490px) {
      body {
          font-size: 16px;
          overflow-x: hidden;
